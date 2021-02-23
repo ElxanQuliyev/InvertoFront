@@ -16,7 +16,11 @@
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel='dns-prefetch' href='http://s.w.org/' />
     <link rel="alternate" type="application/rss+xml" title="Demo 9 &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Demo 9 &raquo; Comments Feed" href="comments/feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Demo 9 &raquo; Comments Feed"
+        href="comments/feed/index.html" />
+    <link rel="stylesheet" href="vendors/slick.css">
+    <link rel="stylesheet" href="vendors/slick-theme.css">
+
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
@@ -27,7 +31,7 @@
                 "concatemoji": "https:\/\/www.demo.themicart.com\/interico-wp\/demo-9\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.1"
             }
         };
-        ! function(e, a, t) {
+        ! function (e, a, t) {
             var n, r, o, i = a.createElement("canvas"),
                 p = i.getContext && i.getContext("2d");
 
@@ -43,9 +47,9 @@
                 t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
             }
             for (o = Array("flag", "emoji"), t.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
                 if (!p || !p.fillText) return !1;
                 switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
                     case "flag":
@@ -63,15 +67,15 @@
             }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports
                 .everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
             t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t
-                .readyCallback = function() {
+                .readyCallback = function () {
                     t.DOMReady = !0
-                }, t.supports.everything || (n = function() {
+                }, t.supports.everything || (n = function () {
                     t.readyCallback()
                 }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !
-                    1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
-                    "complete" === a.readyState && t.readyCallback()
-                })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n
-                    .wpemoji)))
+                    1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
+                        "complete" === a.readyState && t.readyCallback()
+                    })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n
+                        .wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
     <style type="text/css">
@@ -88,15 +92,30 @@
             padding: 0 !important;
         }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.mind96d.css?ver=5.6.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='siteorigin-panels-front-css' href='wp-content/plugins/siteorigin-panels/css/front-flex.min2c4f.css?ver=2.10.13' type='text/css' media='all' />
-    <link rel='stylesheet' id='interico-fonts-css' href='https://fonts.googleapis.com/css?family=Rubik%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
-    <link rel='stylesheet' id='interico-style-css' href='wp-content/themes/interico/stylef488.css?ver=1.1.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='font-awesome-css' href='wp-content/themes/interico/fonts/font-awesome/css/font-awesomed96d.css?ver=5.6.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/stylesb62d.css?ver=5.1.6' type='text/css' media='all' />
-    <link rel='stylesheet' id='wp-featherlight-css' href='wp-content/plugins/wp-featherlight/css/wp-featherlight.min6f3e.css?ver=1.3.0' type='text/css' media='all' />
-    <script type='text/javascript' src='wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp4a5f.js?ver=1.12.4-wp' id='jquery-core-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp8952.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='wp-includes/css/dist/block-library/style.mind96d.css?ver=5.6.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='siteorigin-panels-front-css'
+        href='wp-content/plugins/siteorigin-panels/css/front-flex.min2c4f.css?ver=2.10.13' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='interico-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Rubik%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i&amp;subset=latin%2Clatin-ext'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='interico-style-css' href='wp-content/themes/interico/stylef488.css?ver=1.1.0'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css'
+        href='wp-content/themes/interico/fonts/font-awesome/css/font-awesomed96d.css?ver=5.6.1' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='contact-form-7-css'
+        href='wp-content/plugins/contact-form-7/includes/css/stylesb62d.css?ver=5.1.6' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-featherlight-css'
+        href='wp-content/plugins/wp-featherlight/css/wp-featherlight.min6f3e.css?ver=1.3.0' type='text/css'
+        media='all' />
+    <script type='text/javascript'
+        src='wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp4a5f.js?ver=1.12.4-wp'
+        id='jquery-core-js'></script>
+    <script type='text/javascript'
+        src='wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp8952.js?ver=1.4.1-wp'
+        id='jquery-migrate-js'></script>
     <link rel="https://api.w.org/" href="wp-json/index.html" />
     <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/7788.json" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
@@ -104,80 +123,82 @@
     <meta name="generator" content="WordPress 5.6.1" />
     <link rel="canonical" href="index.html" />
     <link rel='shortlink' href='index.html' />
-    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed567d.json?url=https%3A%2F%2Fwww.demo.themicart.com%2Finterico-wp%2Fdemo-9%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed70ca?url=https%3A%2F%2Fwww.demo.themicart.com%2Finterico-wp%2Fdemo-9%2F&amp;format=xml" />
+    <link rel="alternate" type="application/json+oembed"
+        href="wp-json/oembed/1.0/embed567d.json?url=https%3A%2F%2Fwww.demo.themicart.com%2Finterico-wp%2Fdemo-9%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="wp-json/oembed/1.0/embed70ca?url=https%3A%2F%2Fwww.demo.themicart.com%2Finterico-wp%2Fdemo-9%2F&amp;format=xml" />
 
     <style type="text/css" id="custom-colors-css">
         header #logo {
             margin-top: 45px;
         }
-        
+
         header #logo img {
             max-width: 320px;
         }
-        
+
         @media screen and (max-width: 990px) {
             header #logo {
                 margin-top: 35px;
             }
         }
-        
+
         @media screen and (max-width: 990px) {
             header #logo img {
                 max-width: 320px;
             }
         }
-        
+
         @media screen and (max-width: 990px) {
             .navbar-toggle {
                 top: 20px;
             }
         }
-        
+
         .header-style-2.subnav-dark .header-wrapper,
         .header-style-2.subnav-light .header-wrapper {
             background-color: #012d3f !important;
         }
-        
+
         .subnav-dark .subnav,
         .subnav-light .subnav {
             background-color: #012d3f;
         }
-        
+
         .subnav-light.subnav-angular .subnav::before,
         .subnav-dark.subnav-angular .subnav::before {
             border-right-color: #012d3f !important;
         }
-        
+
         .subnav-light.subnav-angular .subnav::after,
         .subnav-dark.subnav-angular .subnav::after {
             border-top-color: #012d3f !important;
         }
-        
+
         .subnav .social i,
         .subnav-light .subnav .social i,
         .subnav-light .social i {
             background-color: #001e30;
         }
-        
+
         .subnav-item p,
         .subnav-item a,
         .subnav-item i,
         .subnav-item p span {
             color: #ffffff;
         }
-        
+
         .subnav-light .subnav-item p,
         .subnav-light .subnav-item a,
         .subnav-light .subnav-item i,
         .subnav-light .subnav-item p span {
             color: #ffffff;
         }
-        
+
         .subnav .subnav-item .fa {
             color: #ffffff;
         }
-        
+
         #mainmenu>li>a:hover,
         #mainmenu>li.menu-item-has-children:hover:after,
         #mainmenu>li:hover>a,
@@ -185,118 +206,122 @@
         #header.header-light #mainmenu>li.menu-item-has-children:hover:after {
             color: #eeeeee !important;
         }
-        
+
         @media screen and (min-width: 991px) {
             #mainmenu>li:before {
                 background-color: #0f3c63;
             }
         }
-        
+
         #mainmenu li ul li a {
             color: #ffffff !important;
         }
-        
+
         #mainmenu li ul li a:hover {
             color: #ffffff !important;
         }
-        
+
         @media screen and (max-width: 990px) {
             #mainmenu>li>a {
                 color: #ffffff !important;
             }
         }
-        
+
         @media screen and (max-width: 990px) {
+
             #mainmenu>li.menu-item-has-children:after,
             #header.header-light #mainmenu>li.menu-item-has-children::after {
                 color: #ffffff !important;
             }
         }
-        
+
         #mainmenu li ul li a {
             background-color: #012d3f !important;
         }
-        
+
         #mainmenu li ul li a:hover {
             background-color: #001e30 !important;
         }
-        
+
         #mainmenu li ul li,
         #mainmenu ul {
             border-color: #001e30 !important;
         }
-        
+
         @media screen and (max-width: 990px) {
+
             #mainmenu>li>a,
             .header-style-3 #header #mainmenu>li>a {
                 background: #001e30;
                 border-color: #000f21 !important;
             }
         }
-        
+
         @media screen and (max-width: 990px) {
+
             #mainmenu>li.menu-item-has-children:after,
             #header.header-light #mainmenu>li.menu-item-has-children::after {
                 background-color: #000f21 !important;
             }
         }
-        
+
         #mainmenu li ul li ul li a {
             color: #cccccc !important;
         }
-        
+
         #mainmenu li ul li ul li a:hover {
             color: #dbdbdb !important;
         }
-        
+
         @media screen and (max-width: 990px) {
             #mainmenu>li>a:hover {
                 color: #cccccc !important;
             }
         }
-        
+
         @media screen and (max-width: 990px) {
+
             #mainmenu>li.menu-item-has-children:hover:after,
             #header.header-light #mainmenu>li.menu-item-has-children:hover:after {
                 color: #cccccc !important;
             }
         }
-        
+
         #mainmenu li ul li ul li a {
             background-color: #333333 !important;
         }
-        
+
         #mainmenu li ul li ul li a:hover {
             background-color: #242424 !important;
         }
-        
+
         #mainmenu li ul li ul li,
         #mainmenu ul li ul {
             border-color: #242424 !important;
         }
-        
+
         @media screen and (max-width: 990px) {
             #mainmenu>li>a:hover {
                 background-color: #000f21 !important;
                 border-color: #000f21 !important;
             }
         }
-        
+
         @media screen and (max-width: 990px) {
             #mainmenu {
                 border-bottom-color: #000f21 !important;
             }
         }
-        
+
         #top-content-area .title-content h1 {
             color: #ffffff;
         }
-        
+
         #top-content-area .overlay {
             background-color: #444444;
             opacity: 0.3;
         }
-        
+
         .btn,
         .btn-primary,
         .btn-regular,
@@ -316,12 +341,12 @@
             padding: 15px 20px;
             border-radius: 3px;
         }
-        
+
         .woocommerce button[type='submit'] {
             border-bottom-right-radius: 3px;
             border-top-right-radius: 3px;
         }
-        
+
         .btn-primary,
         input[type=submit],
         input[type='submit'],
@@ -340,7 +365,7 @@
             background-color: #0f3c63 !important;
             border-color: #0f3c63 !important;
         }
-        
+
         .btn-primary:active:hover,
         .btn-primary:active:focus,
         .btn-primary:hover,
@@ -365,13 +390,13 @@
             background-color: #00234a !important;
             border-color: #00234a !important;
         }
-        
+
         .btn-regular:hover,
         .btn-regular:focus,
         .btn-regular:active {
             color: #777;
         }
-        
+
         main ul li::before,
         .content ul li::before,
         .panel-body ul li::before,
@@ -384,17 +409,17 @@
         .subtitle.style-dark::before,
         .dash.style-dark,
         .toggled,
-         ::selection,
-         ::-moz-selection,
+        ::selection,
+        ::-moz-selection,
         .tooltip-inner,
         .reply:hover:before {
             background-color: #0f3c63;
         }
-        
+
         blockquote {
             border-color: #0f3c63;
         }
-        
+
         a:hover,
         .post-info a:hover,
         .body-dark .post-info a:hover,
@@ -420,7 +445,7 @@
         .projects-navigation .icon-icon-gallery:hover:before {
             color: #0f3c63;
         }
-        
+
         .nav-tabs.style-accent>li.active>a,
         .nav-tabs.style-accent>li.active>a:hover,
         .nav-tabs.style-accent>li.active>a:focus,
@@ -428,91 +453,91 @@
         .panel-group .accordion-toggle[aria-expanded='true']:hover {
             background-color: #0f3c63 !important;
         }
-        
+
         .panel-body,
         .tab-content.style-accent {
             background-color: #053259;
         }
-        
+
         .subtitle::before,
         .dash {
             opacity: 0.75;
         }
-        
+
         .tooltip.top .tooltip-arrow {
             border-top-color: #0f3c63;
         }
-        
+
         .social i:hover,
         #footer-bot .social i:hover {
             color: #ffffff;
             background-color: #7d6741;
         }
-        
+
         .preloader-wrapper.dark {
             background: #444;
         }
-        
+
         .preloader-wrapper.dark .preloader {
             border-color: #666;
         }
-        
+
         .preloader-wrapper.dark .preloader {
             border-top-color: #eee;
         }
-        
+
         a.cta-footer {
             background-color: #0f3c63;
             border-top-color: #00284f;
         }
-        
+
         a.cta-footer:hover {
             background-color: #022649;
             border-top-color: #022649;
         }
-        
+
         a.cta-footer h2,
         a.cta-footer h2::after {
             color: #ffffff !important;
         }
-        
+
         a.cta-footer:hover h2,
         a.cta-footer:hover h2::after {
             color: #ffffff !important;
         }
-        
+
         #footer h4.footer-header {
             color: #999999;
         }
-        
+
         #footer.footer-dark h4.footer-header {
             color: #999999;
         }
-        
+
         #footer,
         #footer ul li {
             color: #aaaaaa;
         }
-        
+
         #footer.footer-dark,
         #footer.footer-dark ul li {
             color: #aaaaaa;
         }
-        
+
         #footer a,
         #footer ul li a,
         ul.content-list a,
         #footer ul li:before {
             color: #aaaaaa;
         }
-        
+
         #footer.footer-dark a,
         #footer.footer-dark ul li a,
         #footer.footer-dark ul.content-list a,
         #footer.footer-dark ul li:before {
             color: #aaaaaa;
         }
-        
+
         #footer a:hover,
         #footer ul li a:hover,
         ul.content-list a:hover,
@@ -520,7 +545,7 @@
         #footer ul li:hover:before {
             color: #ffffff;
         }
-        
+
         #footer.footer-dark a:hover,
         #footer.footer-dark ul li a:hover,
         footer.footer-dark ul.content-list a:hover,
@@ -528,21 +553,21 @@
         #footer.footer-dark ul li:hover:before {
             color: #ffffff;
         }
-        
+
         #footer-bot {
             background-color: #0f3c63;
             color: #0195b2;
         }
-        
+
         #footer-bot .social i {
             color: #aaaaaa;
             background-color: #002d54;
         }
-        
+
         .content-box.service-item.service-box-dark .content-box-info:after {
             background-color: #0f3c63;
         }
-        
+
         .content-box.service-item.service-box-default:hover .box-heading,
         .content-box.service-item.service-box-white:hover .box-heading,
         .body-dark .content-box.service-item.service-box-default:hover .box-heading,
@@ -551,59 +576,59 @@
         .body-dark .content-box.service-item.service-box-gray:hover h4.box-heading {
             color: #0f3c63;
         }
-        
+
         .team-member:hover h4 {
             color: #0f3c63;
         }
-        
+
         .blog-post-box:hover .content-box-info .box-heading,
         .entry-title a:hover {
             color: #0f3c63;
         }
-        
+
         .gallery-categories ul li a.selected,
         .section-gallery.gallery-light .gallery-categories ul li a.selected,
         .section-gallery.gallery-light .gallery-categories ul li a.selected:hover,
         .gallery-categories ul li a.selected:hover {
             color: #000000;
         }
-        
+
         .captions-bottom .portfolio-box-caption-content::after {
             background-color: #0f3c63;
         }
-        
+
         .carousel-control:after,
         #gallery-slider .slick-prev:after,
         #gallery-slider .slick-next:after {
             background-color: #0f3c63;
         }
-        
+
         .gallery-categories ul li a.selected,
         .section-gallery.gallery-light .gallery-categories ul li a.selected,
         .section-gallery.gallery-light .gallery-categories ul li a.selected:hover,
         .gallery-categories ul li a.selected:hover {
             background-color: #dddddd;
         }
-        
+
         .section-gallery,
         .section-gallery.gallery-light .section-gallery {
             background-color: #333333;
         }
-        
+
         .project-category {
             color: #cccccc;
         }
-        
+
         .feature-box>i,
         .feature-box>.lnr {
             color: #0f3c63;
         }
-        
+
         .feature-box:hover>i,
         .feature-box:hover>.lnr {
             color: #0f3c63;
         }
-        
+
         .feature-box .feature-title,
         .feature-box.dark .feature-title,
         .body-dark .feature-box.dark .feature-title,
@@ -612,30 +637,31 @@
         .feature-box .feature-title {
             color: #444444;
         }
-        
+
         .feature-box:hover .feature-title,
         .feature-box.dark:hover .feature-title {
             color: #0f3c63;
         }
-        
+
         .number-box:hover h3,
         .number-box.style-dark:hover h3 {
             color: #0f3c63;
         }
-        
+
         .number-box-number {
             background-color: #0f3c63;
         }
-        
+
         .number-box.style-default .number-box-number:after {
             background: #333333;
         }
-        
+
         .number-box.style-dark .number-box-number {
             color: #333333;
         }
-        
+
         @media screen and (min-width: 768px) {
+
             .woocommerce ul.products>li.product,
             .woocommerce-page ul.products>li.product {
                 width: 22.05%;
@@ -657,17 +683,20 @@
             background-repeat: repeat;
             background-attachment: scroll;
         }
+        .slick-dots li button:before{
+            font-size:20px ;
+        }
     </style>
     <style type="text/css" media="all" id="siteorigin-panels-layouts-head">
         /* Layout 7788 */
-        
+
         #pgc-7788-0-0,
         #pgc-7788-7-0,
         #pgc-7788-9-0 {
             width: 100%;
             width: calc(100% - (0 * 30px))
         }
-        
+
         #pg-7788-0,
         #pg-7788-1,
         #pg-7788-2,
@@ -676,7 +705,7 @@
         #pg-7788-5 {
             margin-bottom: 120px
         }
-        
+
         #pgc-7788-1-0,
         #pgc-7788-1-1,
         #pgc-7788-1-2,
@@ -688,7 +717,7 @@
             width: 25%;
             width: calc(25% - (0.75 * 30px))
         }
-        
+
         #pgc-7788-2-0,
         #pgc-7788-2-1,
         #pgc-7788-10-0,
@@ -696,33 +725,33 @@
             width: 50%;
             width: calc(50% - (0.5 * 30px))
         }
-        
+
         #pgc-7788-3-0,
         #pgc-7788-4-1,
         #pgc-7788-5-0 {
             width: 33.3333%;
             width: calc(33.3333% - (0.66666666666667 * 30px))
         }
-        
+
         #pgc-7788-3-1,
         #pgc-7788-4-0,
         #pgc-7788-5-1 {
             width: 66.6667%;
             width: calc(66.6667% - (0.33333333333333 * 30px))
         }
-        
+
         #pl-7788 #panel-7788-3-1-0,
         #pl-7788 #panel-7788-4-0-0 {
             margin: 0px 0px -30px 0px
         }
-        
+
         #pg-7788-6,
         #pg-7788-7,
         #pg-7788-8,
         #pl-7788 .so-panel:last-child {
             margin-bottom: 0px
         }
-        
+
         #pgc-7788-8-0,
         #pgc-7788-8-1,
         #pgc-7788-8-2,
@@ -731,12 +760,12 @@
             width: 20%;
             width: calc(20% - (0.8 * 30px))
         }
-        
+
         #pg-7788-9,
         #pl-7788 .so-panel {
             margin-bottom: 30px
         }
-        
+
         #pg-7788-0.panel-no-style,
         #pg-7788-0.panel-has-style>.panel-row-style,
         #pg-7788-1.panel-no-style,
@@ -762,13 +791,13 @@
             -webkit-align-items: flex-start;
             align-items: flex-start
         }
-        
+
         #pg-7788-1>.panel-row-style,
         #pg-7788-3>.panel-row-style,
         #pg-7788-4>.panel-row-style {
             padding: 0px 0px 0px 0px
         }
-        
+
         #pg-7788-2>.panel-row-style {
             background-color: #5d4444;
             background-image: url(https://images-na.ssl-images-amazon.com/images/I/91OlgI-utyL._AC_SX679_.jpg);
@@ -776,7 +805,7 @@
             padding: 120px 0px 120px 0px;
             position: relative;
         }
-        
+
         #pg-7788-2>.panel-row-style::after {
             content: '';
             position: absolute;
@@ -786,36 +815,38 @@
             height: 100%;
             background: #00000082;
         }
-        
+
         #pg-7788-7>.panel-row-style {
             padding: 120px 0px 120px 0px
         }
+
         /* .panel-buta {
             background: url(https://images-na.ssl-images-amazon.com/images/I/91OlgI-utyL._AC_SX679_.jpg);
         } */
-        
+
         #pg-7788-6>.panel-row-style {
             background-color: #f9f8f3;
             /* background-image: url(https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/03/vertical-lines-3.png); */
             background-repeat: repeat;
             padding: 120px 0px 120px 0px
         }
-        
+
         #pg-7788-8>.panel-row-style {
             background-color: #f5f5f5;
             background-image: url(https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/03/vertical-lines-3.png);
             background-repeat: repeat;
             padding: 60px 0px 60px 0px
         }
-        
+
         #pg-7788-10>.panel-row-style {
             background-color: #f5f5f5;
             /* background-image: url(https://previews.123rf.com/images/amovitania/amovitania1601/amovitania160100037/51363405-intricate-blue-paisley-pattern-traditional-persian-seamless-pattern-buta-almond-shape-curving-teardr.jpg); */
             background-repeat: repeat;
             padding: 120px 0px 120px 0px
         }
-        
+
         @media (max-width:780px) {
+
             #pg-7788-0.panel-no-style,
             #pg-7788-0.panel-has-style>.panel-row-style,
             #pg-7788-1.panel-no-style,
@@ -838,6 +869,7 @@
                 -ms-flex-direction: column;
                 flex-direction: column
             }
+
             #pg-7788-0>.panel-grid-cell,
             #pg-7788-0>.panel-row-style>.panel-grid-cell,
             #pg-7788-1>.panel-grid-cell,
@@ -863,6 +895,7 @@
                 width: 100%;
                 margin-right: 0
             }
+
             #pgc-7788-1-0,
             #pgc-7788-1-1,
             #pgc-7788-1-2,
@@ -880,6 +913,7 @@
             #pgc-7788-10-0 {
                 margin-bottom: 30px
             }
+
             #pg-7788-3.panel-no-style,
             #pg-7788-3.panel-has-style>.panel-row-style,
             #pg-7788-5.panel-no-style,
@@ -888,18 +922,23 @@
                 -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse
             }
+
             #pl-7788 .panel-grid-cell {
                 padding: 0
             }
+
             #pl-7788 .panel-grid .panel-grid-cell-empty {
                 display: none
             }
+
             #pl-7788 .panel-grid .panel-grid-cell-mobile-last {
                 margin-bottom: 0px
             }
+
             #panel-7788-8-0-0>.panel-widget-style {
                 text-align: center
             }
+
             #pg-7788-10>.panel-row-style {
                 padding: 0px 0px 0px 0px
             }
@@ -908,43 +947,44 @@
     <link rel="icon" href="wp-content/uploads/sites/9/2018/05/cropped-favicon-4-32x32.png" sizes="32x32" />
     <link rel="icon" href="wp-content/uploads/sites/9/2018/05/cropped-favicon-4-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="wp-content/uploads/sites/9/2018/05/cropped-favicon-4-180x180.png" />
-    <meta name="msapplication-TileImage" content="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/05/cropped-favicon-4-270x270.png" />
+    <meta name="msapplication-TileImage"
+        content="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/05/cropped-favicon-4-270x270.png" />
     <style type="text/css" id="wp-custom-css">
         .shadow-box.overlap-right {
             margin-top: 80px;
         }
-        
+
         .content-box.service-item.service-box-white {
             background: #fff;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.07);
         }
-        
+
         .content-box.service-item.service-box-default {
             background: #f5f5f5;
             box-shadow: none;
         }
-        
+
         .content-box.service-item.service-box-default:hover,
         .content-box.service-item.service-box-white:hover {
             background: #fff;
             box-shadow: 0 5px 14px 0px rgba(0, 0, 0, 0.07);
         }
-        
+
         .body-dark .feature-box.dark .feature-title {
             color: #ddd;
         }
-        
+
         .body-dark .feature-box.dark:hover .btn-read-more,
         .body-dark .feature-box.dark:hover .btn-read-more:after,
         .body-dark .feature-box.dark:hover .feature-title {
             color: #fff;
         }
-        
+
         .feature-box.dark>i,
         .feature-box.dark>.lnr {
             color: #2a6191;
         }
-        
+
         .number-box:hover h3,
         .number-box.style-dark:hover h3 {
             color: #2a6191;
@@ -953,7 +993,8 @@
 </head>
 
 
-<body class="home page-template page-template-page-slider page-template-page-slider-php page page-id-7788 custom-background siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home wp-featherlight-captions header-style-1 subnav-fullwidth subnav-dark subnav-content-right header-typography-style-3 submenu-dark light custom-colors">
+<body
+    class="home page-template page-template-page-slider page-template-page-slider-php page page-id-7788 custom-background siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home wp-featherlight-captions header-style-1 subnav-fullwidth subnav-dark subnav-content-right header-typography-style-3 submenu-dark light custom-colors">
 
     <div class="preloader-wrapper dark">
         <div class="preloader"></div>
@@ -968,15 +1009,18 @@
                     <div class="col-md-12">
                         <div class="subnav-item">
                             <p>
-                                <i class="fa fa-clock-o" aria-hidden="true"></i> Opening time: Mon-Fri 08:00 - 18:00 </p>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> Opening time: Mon-Fri 08:00 - 18:00
+                            </p>
                         </div>
                         <div class="subnav-item">
                             <p>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i> Email: info@interico.com </p>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> Email: info@interico.com
+                            </p>
                         </div>
                         <div class="subnav-item">
                             <p>
-                                <i class="fa fa-phone" aria-hidden="true"></i> Phone: +1 (378) 400-1234 </p>
+                                <i class="fa fa-phone" aria-hidden="true"></i> Phone: +1 (378) 400-1234
+                            </p>
                         </div>
 
 
@@ -1007,7 +1051,8 @@
                                 <a href="index.html">
 
 
-                                    <img src="wp-content/themes/interico/img/logo-white.png" srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/themes/interico/img/logo-white.png, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/themes/interico/img/logo-white2x.png 2x"
+                                    <img src="wp-content/themes/interico/img/logo-white.png"
+                                        srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/themes/interico/img/logo-white.png, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/themes/interico/img/logo-white2x.png 2x"
                                         alt="Demo 9">
 
 
@@ -1016,208 +1061,310 @@
                             <!-- Logo end -->
 
                             <!-- Responsive nav button begin -->
-                            <button type="button" id="menu-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar top-bar"></span>
-								<span class="icon-bar middle-bar"></span>
-								<span class="icon-bar bottom-bar"></span>
-							</button>
+                            <button type="button" id="menu-btn" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#mainmenu" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar top-bar"></span>
+                                <span class="icon-bar middle-bar"></span>
+                                <span class="icon-bar bottom-bar"></span>
+                            </button>
                             <!-- Responsive nav button end -->
 
                             <!-- Main menu begin -->
                             <nav>
                                 <div class="menu-main-menu-v2-container">
                                     <ul id="mainmenu" class="collapse navbar-collapse">
-                                        <li id="menu-item-9537" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-9537">
+                                        <li id="menu-item-9537"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-9537">
                                             <a href="index.html" aria-current="page">Demos</a>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-9466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9466">
-                                                    <a href="../index.html">Demo 1 &#8211; Main</a></li>
-                                                <li id="menu-item-9467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9467">
-                                                    <a href="../demo-2/index.html">Demo 2 &#8211; Extravagant</a></li>
-                                                <li id="menu-item-9468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9468">
+                                                <li id="menu-item-9466"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9466">
+                                                    <a href="../index.html">Demo 1 &#8211; Main</a>
+                                                </li>
+                                                <li id="menu-item-9467"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9467">
+                                                    <a href="../demo-2/index.html">Demo 2 &#8211; Extravagant</a>
+                                                </li>
+                                                <li id="menu-item-9468"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9468">
                                                     <a href="../demo-3/index.html">Demo 3 &#8211; Horizontal slider</a>
                                                 </li>
-                                                <li id="menu-item-9469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9469">
+                                                <li id="menu-item-9469"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9469">
                                                     <a href="../demo-4/index.html">Demo 4 &#8211; Vertical portfolio</a>
                                                 </li>
-                                                <li id="menu-item-9470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9470">
-                                                    <a href="../demo-5/index.html">Demo 5 &#8211; Furniture</a></li>
-                                                <li id="menu-item-9471" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9471">
-                                                    <a href="../demo-6/index.html">Demo 6 &#8211; Plants</a></li>
-                                                <li id="menu-item-9472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9472">
-                                                    <a href="../demo-7/index.html">Demo 7 &#8211; Lighting</a></li>
-                                                <li id="menu-item-9473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9473">
-                                                    <a href="../demo-8/index.html">Demo 8 &#8211; Industrial</a></li>
-                                                <li id="menu-item-9474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-9474">
+                                                <li id="menu-item-9470"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9470">
+                                                    <a href="../demo-5/index.html">Demo 5 &#8211; Furniture</a>
+                                                </li>
+                                                <li id="menu-item-9471"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9471">
+                                                    <a href="../demo-6/index.html">Demo 6 &#8211; Plants</a>
+                                                </li>
+                                                <li id="menu-item-9472"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9472">
+                                                    <a href="../demo-7/index.html">Demo 7 &#8211; Lighting</a>
+                                                </li>
+                                                <li id="menu-item-9473"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9473">
+                                                    <a href="../demo-8/index.html">Demo 8 &#8211; Industrial</a>
+                                                </li>
+                                                <li id="menu-item-9474"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-9474">
                                                     <a href="index.html" aria-current="page">Demo 9 &#8211; Modern
-														Office</a>
+                                                        Office</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9610">
-                                                            <a href="dark/index.html">Demo 9 (Dark)</a></li>
+                                                        <li id="menu-item-9610"
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9610">
+                                                            <a href="dark/index.html">Demo 9 (Dark)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9475" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9475">
-                                                    <a href="../demo-10/index.html">Demo 10 &#8211; Provance</a></li>
-                                                <li id="menu-item-9476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9476">
+                                                <li id="menu-item-9475"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9475">
+                                                    <a href="../demo-10/index.html">Demo 10 &#8211; Provance</a>
+                                                </li>
+                                                <li id="menu-item-9476"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9476">
                                                     <a href="../demo-11/index.html">Demo 11 &#8211; Cafe Interiors</a>
                                                 </li>
-                                                <li id="menu-item-9477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9477">
-                                                    <a href="../demo-12/index.html">Demo 12 &#8211; Decorator</a></li>
+                                                <li id="menu-item-9477"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9477">
+                                                    <a href="../demo-12/index.html">Demo 12 &#8211; Decorator</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-9522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9522">
+                                        <li id="menu-item-9522"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9522">
                                             <a href="../services/index.html">Services</a>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-9478" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9478">
-                                                    <a href="../services/index.html">Services v1</a></li>
-                                                <li id="menu-item-9479" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9479">
-                                                    <a href="../services-2/index.html">Services v2</a></li>
-                                                <li id="menu-item-9480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9480">
-                                                    <a href="../services-3/index.html">Services v3</a></li>
-                                                <li id="menu-item-9481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9481">
+                                                <li id="menu-item-9478"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9478">
+                                                    <a href="../services/index.html">Services v1</a>
+                                                </li>
+                                                <li id="menu-item-9479"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9479">
+                                                    <a href="../services-2/index.html">Services v2</a>
+                                                </li>
+                                                <li id="menu-item-9480"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9480">
+                                                    <a href="../services-3/index.html">Services v3</a>
+                                                </li>
+                                                <li id="menu-item-9481"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9481">
                                                     <a href="../services/architecture/index.html">Architecture v1</a>
                                                 </li>
-                                                <li id="menu-item-9482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9482">
+                                                <li id="menu-item-9482"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9482">
                                                     <a href="../services/interior-design/index.html">Interior Design
-														v2</a></li>
-                                                <li id="menu-item-9483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9483">
+                                                        v2</a>
+                                                </li>
+                                                <li id="menu-item-9483"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9483">
                                                     <a href="../services/lighting-installation/index.html">Lighting
-														Installation v3</a></li>
-                                                <li id="menu-item-9484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9484">
+                                                        Installation v3</a>
+                                                </li>
+                                                <li id="menu-item-9484"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9484">
                                                     <a href="../services/led-lighting/index.html">LED Lighting v4</a>
                                                 </li>
-                                                <li id="menu-item-9485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9485">
+                                                <li id="menu-item-9485"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9485">
                                                     <a href="../services/floor-planning/index.html">Floor Planning
-														v5</a></li>
-                                                <li id="menu-item-9486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9486">
-                                                    <a href="../services/decorating/index.html">Decorating v6</a></li>
+                                                        v5</a>
+                                                </li>
+                                                <li id="menu-item-9486"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9486">
+                                                    <a href="../services/decorating/index.html">Decorating v6</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-9523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9523">
+                                        <li id="menu-item-9523"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9523">
                                             <a href="../projects/index.html">Projects</a>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-9487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9487">
+                                                <li id="menu-item-9487"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9487">
                                                     <a href="../projects-style-1/index.html">Projects: Style 1</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9493">
+                                                        <li id="menu-item-9493"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9493">
                                                             <a href="../projects-style-1-light/index.html">Projects:
-																Style 1 (Light)</a></li>
-                                                        <li id="menu-item-9499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9499">
-                                                            <a href="../projects-2-col/index.html">2 Columns</a></li>
-                                                        <li id="menu-item-9506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9506">
-                                                            <a href="../projects/index.html">3 Columns</a></li>
-                                                        <li id="menu-item-9507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9507">
-                                                            <a href="../projects-4-col/index.html">4 Columns</a></li>
+                                                                Style 1 (Light)</a>
+                                                        </li>
+                                                        <li id="menu-item-9499"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9499">
+                                                            <a href="../projects-2-col/index.html">2 Columns</a>
+                                                        </li>
+                                                        <li id="menu-item-9506"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9506">
+                                                            <a href="../projects/index.html">3 Columns</a>
+                                                        </li>
+                                                        <li id="menu-item-9507"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9507">
+                                                            <a href="../projects-4-col/index.html">4 Columns</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9488">
+                                                <li id="menu-item-9488"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9488">
                                                     <a href="../projects-style-2/index.html">Projects: Style 2</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9494" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9494">
+                                                        <li id="menu-item-9494"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9494">
                                                             <a href="../projects-style-2-light/index.html">Projects:
-																Style 2 (Light)</a></li>
+                                                                Style 2 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9489">
+                                                <li id="menu-item-9489"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9489">
                                                     <a href="../projects-style-3/index.html">Projects: Style 3</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9495">
+                                                        <li id="menu-item-9495"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9495">
                                                             <a href="../projects-style-3-light/index.html">Projects:
-																Style 3 (Light)</a></li>
+                                                                Style 3 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9490">
+                                                <li id="menu-item-9490"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9490">
                                                     <a href="../projects-style-4/index.html">Projects: Style 4</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9496">
+                                                        <li id="menu-item-9496"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9496">
                                                             <a href="../projects-style-4-light/index.html">Projects:
-																Style 4 (Light)</a></li>
+                                                                Style 4 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9491">
+                                                <li id="menu-item-9491"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9491">
                                                     <a href="../projects-style-5/index.html">Projects: Style 5</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9497">
+                                                        <li id="menu-item-9497"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9497">
                                                             <a href="../projects-style-5-light/index.html">Projects:
-																Style 5 (Light)</a></li>
+                                                                Style 5 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9492" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9492">
+                                                <li id="menu-item-9492"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9492">
                                                     <a href="../projects-style-6/index.html">Projects: Style 6</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9498">
+                                                        <li id="menu-item-9498"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9498">
                                                             <a href="../projects-style-6-light/index.html">Projects:
-																Style 6 (Light)</a></li>
+                                                                Style 6 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9500">
+                                                <li id="menu-item-9500"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9500">
                                                     <a href="../projects-style-7/index.html">Projects: Style 7</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9504">
+                                                        <li id="menu-item-9504"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9504">
                                                             <a href="../projects-style-7-light/index.html">Projects:
-																Style 7 (Light)</a></li>
+                                                                Style 7 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9501">
+                                                <li id="menu-item-9501"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9501">
                                                     <a href="../projects-style-8/index.html">Projects: Style 8</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9505">
+                                                        <li id="menu-item-9505"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9505">
                                                             <a href="../projects-style-8-light/index.html">Projects:
-																Style 8 (Light)</a></li>
+                                                                Style 8 (Light)</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
-                                                <li id="menu-item-9502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9502">
+                                                <li id="menu-item-9502"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9502">
                                                     <a href="../style-9-horizontal-slider/index.html">Projects: Style 9
-														Horizontal Slider</a>
+                                                        Horizontal Slider</a>
                                                     <ul class="sub-menu">
-                                                        <li id="menu-item-9503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9503">
-                                                            <a href="../projects-style-10-horizontal-slider-v2/index.html">Projects:
-																Style 9 Horizontal Slider v2</a></li>
+                                                        <li id="menu-item-9503"
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9503">
+                                                            <a
+                                                                href="../projects-style-10-horizontal-slider-v2/index.html">Projects:
+                                                                Style 9 Horizontal Slider v2</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-9521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9521">
+                                        <li id="menu-item-9521"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9521">
                                             <a href="../about-us/index.html">About us</a>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-9508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9508">
-                                                    <a href="../about-us/our-team/index.html">Our team</a></li>
-                                                <li id="menu-item-9509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9509">
-                                                    <a href="../testimonials/index.html">Testimonials</a></li>
-                                                <li id="menu-item-9510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9510">
+                                                <li id="menu-item-9508"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9508">
+                                                    <a href="../about-us/our-team/index.html">Our team</a>
+                                                </li>
+                                                <li id="menu-item-9509"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9509">
+                                                    <a href="../testimonials/index.html">Testimonials</a>
+                                                </li>
+                                                <li id="menu-item-9510"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9510">
                                                     <a href="../about-us/left-sidebar-page/index.html">Left sidebar
-														page</a></li>
-                                                <li id="menu-item-9511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9511">
+                                                        page</a>
+                                                </li>
+                                                <li id="menu-item-9511"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9511">
                                                     <a href="../about-us/right-sidebar-page/index.html">Right sidebar
-														page</a></li>
-                                                <li id="menu-item-9512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9512">
-                                                    <a href="../shortcodes/index.html">Shortcodes</a></li>
+                                                        page</a>
+                                                </li>
+                                                <li id="menu-item-9512"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9512">
+                                                    <a href="../shortcodes/index.html">Shortcodes</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-9513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9513">
+                                        <li id="menu-item-9513"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9513">
                                             <a href="../blog/index.html">Blog</a>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-9514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9514">
-                                                    <a href="../blog/what-its-like-to-be-an-interior-designer/index.html">Blog
-														post</a></li>
+                                                <li id="menu-item-9514"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9514">
+                                                    <a
+                                                        href="../blog/what-its-like-to-be-an-interior-designer/index.html">Blog
+                                                        post</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-9515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9515">
+                                        <li id="menu-item-9515"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9515">
                                             <a href="../shop/index.html">Shop</a>
                                             <ul class="sub-menu">
-                                                <li id="menu-item-9516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9516">
-                                                    <a href="../product/bedroom-lamp/index.html">Product page</a></li>
-                                                <li id="menu-item-9517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9517">
-                                                    <a href="../cart/index.html">Cart</a></li>
-                                                <li id="menu-item-9518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9518">
-                                                    <a href="../checkout/index.html">Checkout</a></li>
-                                                <li id="menu-item-9519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9519">
-                                                    <a href="../my-account/index.html">My account</a></li>
+                                                <li id="menu-item-9516"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9516">
+                                                    <a href="../product/bedroom-lamp/index.html">Product page</a>
+                                                </li>
+                                                <li id="menu-item-9517"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9517">
+                                                    <a href="../cart/index.html">Cart</a>
+                                                </li>
+                                                <li id="menu-item-9518"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9518">
+                                                    <a href="../checkout/index.html">Checkout</a>
+                                                </li>
+                                                <li id="menu-item-9519"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9519">
+                                                    <a href="../my-account/index.html">My account</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li id="menu-item-9520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9520">
-                                            <a href="../contact-us/index.html">Contact us</a></li>
+                                        <li id="menu-item-9520"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9520">
+                                            <a href="../contact-us/index.html">Contact us</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
@@ -1232,7 +1379,8 @@
         <!-- Begin Fullwidth slider -->
 
 
-        <div id="slider-fullwidth" class="carousel slider-style-3 slide carousel-fade" data-ride="carousel" data-interval="6000">
+        <div id="slider-fullwidth" class="carousel slider-style-3 slide carousel-fade" data-ride="carousel"
+            data-interval="6000">
 
             <!-- Carousel items -->
             <div class="carousel-inner">
@@ -1242,7 +1390,8 @@
                 <div class="item active">
                     <div class="overlay" style="opacity: 0.2; background-color: #000000"></div>
                     <div class="lines-overlay animated fadeInDown"></div>
-                    <div class="slide-img animated fadeInRight" style="padding:50px 0;background-image:url(wp-content/uploads/yeni/sehidler.jpg);">
+                    <div class="slide-img animated fadeInRight"
+                        style="padding:50px 0;background-image:url(wp-content/uploads/yeni/sehidler.jpg);">
                     </div>
                     <div class="container">
                         <div class="carousel-content animated fadeIn">
@@ -1276,7 +1425,8 @@
                 <div class="item ">
                     <div class="overlay" style="opacity: 0.5; background-color: #000000"></div>
                     <div class="lines-overlay animated fadeInDown"></div>
-                    <div class="slide-img animated fadeInRight" style="background-image:url(wp-content/uploads/sites/9/2018/04/nastuh-abootalebi-284877-unsplash-1900x760.jpg);">
+                    <div class="slide-img animated fadeInRight"
+                        style="background-image:url(wp-content/uploads/sites/9/2018/04/nastuh-abootalebi-284877-unsplash-1900x760.jpg);">
                     </div>
                     <div class="container">
                         <div class="carousel-content animated fadeIn">
@@ -1285,11 +1435,13 @@
                                 <h2 class="headline-small">Kreativ və müasir dizaynların məkanı bizdədir </h2>
                             </div>
                             <div class="slide-content animated fadeInUpBig">
-                                <p class="tagline">Tikintidə peşəkar ustalar iştirak edir , standartlara cavab verən keyfiyyətli materiallardan istifadə olunur . Siz istəyin , biz yaradaq !
+                                <p class="tagline">Tikintidə peşəkar ustalar iştirak edir , standartlara cavab verən
+                                    keyfiyyətli materiallardan istifadə olunur . Siz istəyin , biz yaradaq !
                                 </p>
                             </div>
                             <div class="slide-buttons animated fadeInUpBig">
-                                <p><a href="#" class="btn btn-primary arrow-right"><span>View Services</span></a><a href="#" class="btn btn-regular arrow-none"><span>Contact us</span></a></p>
+                                <p><a href="#" class="btn btn-primary arrow-right"><span>View Services</span></a><a
+                                        href="#" class="btn btn-regular arrow-none"><span>Contact us</span></a></p>
                             </div>
                         </div>
                     </div>
@@ -1300,9 +1452,9 @@
 
                 <!-- Carousel nav begin -->
                 <a class="carousel-control left" href="#slider-fullwidth" data-slide="prev"><span
-						class="icon-arrow-left"></span></a>
+                        class="icon-arrow-left"></span></a>
                 <a class="carousel-control right" href="#slider-fullwidth" data-slide="next"><span
-						class="icon-arrow-right"></span></a>
+                        class="icon-arrow-right"></span></a>
                 <!-- Carousel nav end -->
 
 
@@ -1311,26 +1463,33 @@
         <!-- End Fullwidth slider -->
         <div class="content no-mrg">
             <div class="container">
-                <div id="pl-7788" class="panel-layout">
                     <div id="pg-7788-0" class="panel-grid panel-has-style">
-                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-0" data-stretch-type="full">
+                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-0"
+                            data-stretch-type="full">
                             <div id="pgc-7788-0-0" class="panel-grid-cell">
-                                <div id="panel-7788-0-0-0" class="so-panel widget widget_siteorigin-panels-builder panel-first-child panel-last-child" data-index="0">
+                                <div id="panel-7788-0-0-0"
+                                    class="so-panel widget widget_siteorigin-panels-builder panel-first-child panel-last-child"
+                                    data-index="0">
                                     <div id="pl-w5aafd4866dff7" class="panel-layout">
                                         <div id="pg-w5aafd4866dff7-0" class="panel-grid panel-has-style">
-                                            <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-w5aafd4866dff7-0" data-stretch-type="full">
+                                            <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-w5aafd4866dff7-0"
+                                                data-stretch-type="full">
                                                 <div id="pgc-w5aafd4866dff7-0-0" class="panel-grid-cell">
-                                                    <div id="panel-w5aafd4866dff7-0-0-0" class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child" data-index="0">
+                                                    <div id="panel-w5aafd4866dff7-0-0-0"
+                                                        class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child"
+                                                        data-index="0">
                                                         <!-- Begin Feature box -->
                                                         <a href="#">
 
-                                                            <div class="feature-box icon-large-left box-default default">
+                                                            <div
+                                                                class="feature-box icon-large-left box-default default">
 
                                                                 <span class="lnr lnr-star"></span>
 
                                                                 <div class="content-wrapper">
 
-                                                                    <h3 class="feature-title">Kreativ və müasir dizaynların məkanı
+                                                                    <h3 class="feature-title">Kreativ və müasir
+                                                                        dizaynların məkanı
                                                                     </h3>
 
                                                                 </div>
@@ -1343,11 +1502,14 @@
                                                     </div>
                                                 </div>
                                                 <div id="pgc-w5aafd4866dff7-0-1" class="panel-grid-cell">
-                                                    <div id="panel-w5aafd4866dff7-0-1-0" class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child" data-index="1">
+                                                    <div id="panel-w5aafd4866dff7-0-1-0"
+                                                        class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child"
+                                                        data-index="1">
                                                         <!-- Begin Feature box -->
                                                         <a href="#">
 
-                                                            <div class="feature-box icon-large-left box-default default">
+                                                            <div
+                                                                class="feature-box icon-large-left box-default default">
 
                                                                 <span class="lnr lnr-calendar-full"></span>
 
@@ -1363,17 +1525,21 @@
                                                     </div>
                                                 </div>
                                                 <div id="pgc-w5aafd4866dff7-0-2" class="panel-grid-cell">
-                                                    <div id="panel-w5aafd4866dff7-0-2-0" class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child" data-index="2">
+                                                    <div id="panel-w5aafd4866dff7-0-2-0"
+                                                        class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child"
+                                                        data-index="2">
                                                         <!-- Begin Feature box -->
                                                         <a href="#">
 
-                                                            <div class="feature-box icon-large-left box-default default">
+                                                            <div
+                                                                class="feature-box icon-large-left box-default default">
 
                                                                 <span class="lnr lnr-home"></span>
 
                                                                 <div class="content-wrapper">
 
-                                                                    <h3 class="feature-title">İnteryer / Eksteryer layihələr
+                                                                    <h3 class="feature-title">İnteryer / Eksteryer
+                                                                        layihələr
                                                                     </h3>
 
 
@@ -1389,11 +1555,14 @@
                                                     </div>
                                                 </div>
                                                 <div id="pgc-w5aafd4866dff7-0-3" class="panel-grid-cell">
-                                                    <div id="panel-w5aafd4866dff7-0-3-0" class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child" data-index="3">
+                                                    <div id="panel-w5aafd4866dff7-0-3-0"
+                                                        class="so-panel widget widget_interico_feature_box panel-first-child panel-last-child"
+                                                        data-index="3">
                                                         <!-- Begin Feature box -->
                                                         <a href="#">
 
-                                                            <div class="feature-box icon-large-left box-hovered default">
+                                                            <div
+                                                                class="feature-box icon-large-left box-hovered default">
 
                                                                 <span class="lnr lnr-pencil"></span>
 
@@ -1421,63 +1590,130 @@
                             </div>
                         </div>
                     </div>
-                    <div id="pg-7788-1" class="panel-grid panel-has-style">
-                        <div class="panel-row-style panel-row-style-for-7788-1">
-                            <div id="pgc-7788-1-0" class="panel-grid-cell">
-                                <div id="panel-7788-1-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="1">
-                                    <div class="animate animate-1 panel-widget-style panel-widget-style-for-7788-1-0-0">
-                                        <div class="textwidget"><span class="subtitle dash-false style-dark text-default">Haqqımızda</span>
-                                            <h2>Xidmətlərimiz</h2>
-                                            <div class="dash style-dark default"></div>
-                                            <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                            <p>It has survived not only five centuries. When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                            <a href="#" class="btn btn-primary arrow-right"><span>View
-													Services</span></a>
+                            <div class="serviceSlider">
+
+                                <div id="panel-7788-1-1-0"
+                                    class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                                    data-index="2">
+                                    <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-1-1-0">
+
+                                        <!-- Begin Image box -->
+                                        <div class="content-box service-item alignment-centered service-box-default">
+                                            <a href="#">
+                                                <div class="image-container">
+                                                    <div class="arrow-box"><span class="icon-arrow-right"></span></div>
+                                                    <img src="wp-content/uploads/sites/9/2018/04/mia-baker-359838-unsplash-360x500.jpg"
+                                                        srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mia-baker-359838-unsplash-270x380.jpg 270w, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mia-baker-359838-unsplash-540x750.jpg 540w"
+                                                        sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                        alt="Lighting Installation">
+                                                </div>
+                                                <div class="content-box-info">
+                                                    <h4 class="box-heading">Lighting Installation</h4>
+                                                </div>
+                                            </a>
                                         </div>
+                                        <!-- End Image box  -->
+
                                     </div>
                                 </div>
-                            </div>
-                            <div id="panel-7788-1-1-0" class="so-panel widget widget_interico_image_box panel-first-child panel-last-child" data-index="2">
-                                <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-1-1-0">
+                                <div id="panel-7788-1-2-0"
+                                    class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                                    data-index="3">
+                                    <div class="animate animate-3 panel-widget-style panel-widget-style-for-7788-1-2-0">
 
-                                    <!-- Begin Image box -->
-                                    <div class="content-box service-item alignment-centered service-box-default">
-                                        <a href="#">
-                                            <div class="image-container">
-                                                <div class="arrow-box"><span class="icon-arrow-right"></span></div>
-                                                <img src="wp-content/uploads/sites/9/2018/04/mia-baker-359838-unsplash-360x500.jpg" srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mia-baker-359838-unsplash-270x380.jpg 270w, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mia-baker-359838-unsplash-540x750.jpg 540w"
-                                                    sizes="(min-width: 781px) 360px, calc(100vw - 30px)" alt="Lighting Installation">
-                                            </div>
-                                            <div class="content-box-info">
-                                                <h4 class="box-heading">Lighting Installation</h4>
-                                            </div>
-                                        </a>
+                                        <!-- Begin Image box -->
+                                        <div class="content-box service-item alignment-centered service-box-default">
+                                            <a href="#">
+                                                <div class="image-container">
+                                                    <div class="arrow-box"><span class="icon-arrow-right"></span></div>
+                                                    <img src="wp-content/uploads/yeni/modern.jpg"
+                                                        sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                        alt="Office Furnishing">
+                                                </div>
+                                                <div class="content-box-info">
+                                                    <h4 class="box-heading">Modern təmir</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Image box  -->
+
                                     </div>
-                                    <!-- End Image box  -->
-
                                 </div>
-                            </div>
-                            <div id="panel-7788-1-2-0" class="so-panel widget widget_interico_image_box panel-first-child panel-last-child" data-index="3">
-                                <div class="animate animate-3 panel-widget-style panel-widget-style-for-7788-1-2-0">
+                                <div id="panel-7788-1-3-0"
+                                    class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                                    data-index="4">
+                                    <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-1-3-0">
 
-                                    <!-- Begin Image box -->
-                                    <div class="content-box service-item alignment-centered service-box-default">
-                                        <a href="#">
-                                            <div class="image-container">
-                                                <div class="arrow-box"><span class="icon-arrow-right"></span></div>
-                                                <img src="wp-content/uploads/sites/9/2018/04/hue-graphy-532156-unsplash1-360x500.jpg" srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/hue-graphy-532156-unsplash1-270x380.jpg 270w, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/hue-graphy-532156-unsplash1-540x750.jpg 540w"
-                                                    sizes="(min-width: 781px) 360px, calc(100vw - 30px)" alt="Office Furnishing">
-                                            </div>
-                                            <div class="content-box-info">
-                                                <h4 class="box-heading">Office Furnishing</h4>
-                                            </div>
-                                        </a>
+                                        <!-- Begin Image box -->
+                                        <div class="content-box service-item alignment-centered service-box-default">
+                                            <a href="#">
+                                                <div class="image-container">
+                                                    <div class="arrow-box"><span class="icon-arrow-right"></span></div>
+                                                    <img src="wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-360x500.jpg"
+                                                        srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-270x380.jpg 270w, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-540x750.jpg 540w"
+                                                        sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                        alt="Decorative Spaces">
+                                                </div>
+                                                <div class="content-box-info">
+                                                    <h4 class="box-heading">Sadə təmir </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Image box  -->
+
                                     </div>
-                                    <!-- End Image box  -->
-
                                 </div>
-                            </div>
-                            <div id="panel-7788-1-3-0" class="so-panel widget widget_interico_image_box panel-first-child panel-last-child" data-index="4">
+                                <div id="panel-7788-1-3-0"
+                                    class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                                    data-index="4">
+                                    <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-1-3-0">
+
+                                        <!-- Begin Image box -->
+                                        <div class="content-box service-item alignment-centered service-box-default">
+                                            <a href="#">
+                                                <div class="image-container">
+                                                    <div class="arrow-box"><span class="icon-arrow-right"></span></div>
+                                                    <img src="wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-360x500.jpg"
+                                                        srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-270x380.jpg 270w, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-540x750.jpg 540w"
+                                                        sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                        alt="Decorative Spaces">
+                                                </div>
+                                                <div class="content-box-info">
+                                                    <h4 class="box-heading">Dekorativ məkanlar
+                                                    </h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Image box  -->
+
+                                    </div>
+                                </div>
+                                <div id="panel-7788-1-3-0"
+                                    class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                                    data-index="4">
+                                    <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-1-3-0">
+
+                                        <!-- Begin Image box -->
+                                        <div class="content-box service-item alignment-centered service-box-default">
+                                            <a href="#">
+                                                <div class="image-container">
+                                                    <div class="arrow-box"><span class="icon-arrow-right"></span></div>
+                                                    <img src="wp-content/uploads/yeni/classicdesign.jpg"
+                                                        sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                        alt="Decorative Spaces">
+                                                </div>
+                                                <div class="content-box-info">
+                                                    <h4 class="box-heading">Classic</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Image box  -->
+
+                                    </div>
+                                </div>
+                                <div id="panel-7788-1-3-0"
+                                class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                                data-index="4">
                                 <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-1-3-0">
 
                                     <!-- Begin Image box -->
@@ -1485,11 +1721,12 @@
                                         <a href="#">
                                             <div class="image-container">
                                                 <div class="arrow-box"><span class="icon-arrow-right"></span></div>
-                                                <img src="wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-360x500.jpg" srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-270x380.jpg 270w, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/04/mike-wilson-197030-unsplash-540x750.jpg 540w"
-                                                    sizes="(min-width: 781px) 360px, calc(100vw - 30px)" alt="Decorative Spaces">
+                                                <img src="wp-content/uploads/yeni/newclassic.jpg"
+                                                    sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                    alt="Decorative Spaces">
                                             </div>
                                             <div class="content-box-info">
-                                                <h4 class="box-heading">Decorative Spaces</h4>
+                                                <h4 class="box-heading">New Classic</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -1497,18 +1734,45 @@
 
                                 </div>
                             </div>
+                            <div id="panel-7788-1-3-0"
+                            class="so-panel widget widget_interico_image_box panel-first-child panel-last-child"
+                            data-index="4">
+                            <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-1-3-0">
+
+                                <!-- Begin Image box -->
+                                <div class="content-box service-item alignment-centered service-box-default">
+                                    <a href="#">
+                                        <div class="image-container">
+                                            <div class="arrow-box"><span class="icon-arrow-right"></span></div>
+                                            <img src="wp-content/uploads/yeni/hovuz.jpg"
+                                                sizes="(min-width: 781px) 360px, calc(100vw - 30px)"
+                                                alt="Decorative Spaces">
+                                        </div>
+                                        <div class="content-box-info">
+                                            <h4 class="box-heading">Hovuz işləri
+                                            </h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- End Image box  -->
+
+                            </div>
                         </div>
-                    </div>
+                            </div>
                     <div id="pg-7788-2" class="panel-buta panel-grid panel-has-style">
-                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-2" data-stretch-type="full">
+                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-2"
+                            data-stretch-type="full">
                             <div id="pgc-7788-2-0" class="panel-grid-cell">
-                                <div id="panel-7788-2-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="5">
-                                    <div style="position: relative;z-index: 5;" class="animate animate-1 panel-widget-style panel-widget-style-for-7788-2-0-0">
+                                <div id="panel-7788-2-0-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="5">
+                                    <div style="position: relative;z-index: 5;"
+                                        class="animate animate-1 panel-widget-style panel-widget-style-for-7788-2-0-0">
                                         <div class="textwidget">
                                             <p><span class="subtitle dash-true style-light text-default">Bizim
-													təcrübəmiz</span></p>
+                                                    təcrübəmiz</span></p>
                                             <h2><span style="color: #fff;"><strong>Ən yüksək rahatlıq səviyyəsində
-														xidmət edən məkanlar dizayn edirik..</strong></span>
+                                                        xidmət edən məkanlar dizayn edirik..</strong></span>
                                             </h2>
                                         </div>
                                     </div>
@@ -1519,24 +1783,34 @@
                     <div id="pg-7788-3" class="panel-grid panel-has-style">
                         <div class="panel-row-style panel-row-style-for-7788-3">
                             <div id="pgc-7788-3-0" class="panel-grid-cell">
-                                <div id="panel-7788-3-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="7">
-                                    <div class="shadow-box overlap-right animate animate-1 panel-widget-style panel-widget-style-for-7788-3-0-0">
+                                <div id="panel-7788-3-0-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="7">
+                                    <div
+                                        class="shadow-box overlap-right animate animate-1 panel-widget-style panel-widget-style-for-7788-3-0-0">
                                         <div class="textwidget">
                                             <p><span class="subtitle dash-true style-dark text-default">Featured
-													Project</span></p>
+                                                    Project</span></p>
                                             <h2><strong>Black Brick Office, NYC.</strong></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s.</p>
+                                            <p>When an unknown printer took a galley of type and scrambled it to make a
+                                                type specimen book. It has survived not only five centuries.</p>
                                             <p><a href="#" class="btn btn-primary arrow-right"><span>View
-														project</span></a></p>
+                                                        project</span></a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="pgc-7788-3-1" class="panel-grid-cell">
-                                <div id="panel-7788-3-1-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="8">
+                                <div id="panel-7788-3-1-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="8">
                                     <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-3-1-0">
-                                        <div class="textwidget"><img class="alignnone size-full wp-image-9284" src="wp-content/uploads/yeni/product1.jpg" alt="" width="1900" height="1268" /></div>
+                                        <div class="textwidget"><img class="alignnone size-full wp-image-9284"
+                                                src="wp-content/uploads/yeni/product1.jpg" alt="" width="1900"
+                                                height="1268" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -1545,26 +1819,36 @@
                     <div id="pg-7788-4" class="panel-grid panel-has-style">
                         <div class="panel-row-style panel-row-style-for-7788-4">
                             <div id="pgc-7788-4-0" class="panel-grid-cell">
-                                <div id="panel-7788-4-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="9">
+                                <div id="panel-7788-4-0-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="9">
                                     <div class="animate animate-1 panel-widget-style panel-widget-style-for-7788-4-0-0">
                                         <div class="textwidget">
-                                            <p><img class="alignnone size-full wp-image-9377" src="wp-content/uploads/yeni/product2.jpg" alt="" width="1900" height="1267" /></p>
+                                            <p><img class="alignnone size-full wp-image-9377"
+                                                    src="wp-content/uploads/yeni/product2.jpg" alt="" width="1900"
+                                                    height="1267" /></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="pgc-7788-4-1" class="panel-grid-cell">
-                                <div id="panel-7788-4-1-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="10">
-                                    <div class="shadow-box overlap-left animate animate-2 panel-widget-style panel-widget-style-for-7788-4-1-0">
+                                <div id="panel-7788-4-1-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="10">
+                                    <div
+                                        class="shadow-box overlap-left animate animate-2 panel-widget-style panel-widget-style-for-7788-4-1-0">
                                         <div class="textwidget">
                                             <p><span class="subtitle dash-true style-dark text-default">Featured
-													Project</span></p>
+                                                    Project</span></p>
                                             <h2><strong>Vintage Office, Emirates<br />
-												</strong></h2>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                            <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                                </strong></h2>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s.</p>
+                                            <p>When an unknown printer took a galley of type and scrambled it to make a
+                                                type specimen book. It has survived not only five centuries.</p>
                                             <p><a href="#" class="btn btn-primary arrow-right"><span>View
-														project</span></a></p>
+                                                        project</span></a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1573,15 +1857,21 @@
                     </div>
                     <div id="pg-7788-5" class="panel-grid panel-no-style">
                         <div id="pgc-7788-5-0" class="panel-grid-cell">
-                            <div id="panel-7788-5-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="11">
-                                <div class="shadow-box overlap-right animate animate-1 panel-widget-style panel-widget-style-for-7788-5-0-0">
+                            <div id="panel-7788-5-0-0"
+                                class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                data-index="11">
+                                <div
+                                    class="shadow-box overlap-right animate animate-1 panel-widget-style panel-widget-style-for-7788-5-0-0">
                                     <div class="textwidget">
                                         <p><span class="subtitle dash-true style-dark text-default">Featured
-												Project</span></p>
+                                                Project</span></p>
                                         <h2><strong>Modern office space, Kobenhavn.</strong></h2>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s.
                                         </p>
-                                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                        <p>When an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book. It has survived not only five centuries.</p>
                                         <p><a href="#" class="btn btn-primary arrow-right"><span>View project</span></a>
                                         </p>
                                     </div>
@@ -1589,31 +1879,40 @@
                             </div>
                         </div>
                         <div id="pgc-7788-5-1" class="panel-grid-cell">
-                            <div id="panel-7788-5-1-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="12">
+                            <div id="panel-7788-5-1-0"
+                                class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                data-index="12">
                                 <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-5-1-0">
                                     <div class="textwidget">
-                                        <p><img class="alignnone size-full wp-image-9374" src="wp-content/uploads/yeni/product3.jpg" alt="" width="1900" height="1267" /></p>
+                                        <p><img class="alignnone size-full wp-image-9374"
+                                                src="wp-content/uploads/yeni/product3.jpg" alt="" width="1900"
+                                                height="1267" /></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="pg-7788-6" class="panel-grid panel-has-style">
-                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-6" data-stretch-type="full">
+                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-6"
+                            data-stretch-type="full">
                             <div id="pgc-7788-6-0" class="panel-grid-cell">
-                                <div id="panel-7788-6-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="13">
+                                <div id="panel-7788-6-0-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="13">
                                     <div class="animate panel-widget-style panel-widget-style-for-7788-6-0-0">
                                         <div class="textwidget">
                                             <p><span class="subtitle dash-true style-dark text-default">How we
-													work</span></p>
+                                                    work</span></p>
                                             <h2><strong>Proven Process that we execute to ensure top industry
-													standards.</strong></h2>
+                                                    standards.</strong></h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="pgc-7788-6-1" class="panel-grid-cell">
-                                <div id="panel-7788-6-1-0" class="so-panel widget widget_interico_number_box panel-first-child" data-index="14">
+                                <div id="panel-7788-6-1-0"
+                                    class="so-panel widget widget_interico_number_box panel-first-child"
+                                    data-index="14">
                                     <div class="animate animate-1 panel-widget-style panel-widget-style-for-7788-6-1-0">
                                         <!-- Begin number box -->
                                         <div class="number-box style-default">
@@ -1622,7 +1921,8 @@
                                             <div class="content-box">
                                                 <div class="content-box-info">
                                                     <h3>Planning</h3>
-                                                    <p class="number-box-content">When an unknown printer took a galley of type and scrambled it to make a book.</p>
+                                                    <p class="number-box-content">When an unknown printer took a galley
+                                                        of type and scrambled it to make a book.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1630,7 +1930,8 @@
 
                                     </div>
                                 </div>
-                                <div id="panel-7788-6-1-1" class="so-panel widget widget_interico_number_box panel-last-child" data-index="15">
+                                <div id="panel-7788-6-1-1"
+                                    class="so-panel widget widget_interico_number_box panel-last-child" data-index="15">
                                     <div class="animate animate-1 panel-widget-style panel-widget-style-for-7788-6-1-1">
                                         <!-- Begin number box -->
                                         <div class="number-box style-default">
@@ -1639,7 +1940,8 @@
                                             <div class="content-box">
                                                 <div class="content-box-info">
                                                     <h3>Modelling</h3>
-                                                    <p class="number-box-content">When an unknown printer took a galley of type and scrambled it to make a book.</p>
+                                                    <p class="number-box-content">When an unknown printer took a galley
+                                                        of type and scrambled it to make a book.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1649,7 +1951,9 @@
                                 </div>
                             </div>
                             <div id="pgc-7788-6-2" class="panel-grid-cell">
-                                <div id="panel-7788-6-2-0" class="so-panel widget widget_interico_number_box panel-first-child" data-index="16">
+                                <div id="panel-7788-6-2-0"
+                                    class="so-panel widget widget_interico_number_box panel-first-child"
+                                    data-index="16">
                                     <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-6-2-0">
                                         <!-- Begin number box -->
                                         <div class="number-box style-default">
@@ -1658,7 +1962,8 @@
                                             <div class="content-box">
                                                 <div class="content-box-info">
                                                     <h3>Moodboard</h3>
-                                                    <p class="number-box-content">When an unknown printer took a galley of type and scrambled it to make a book.</p>
+                                                    <p class="number-box-content">When an unknown printer took a galley
+                                                        of type and scrambled it to make a book.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1666,7 +1971,8 @@
 
                                     </div>
                                 </div>
-                                <div id="panel-7788-6-2-1" class="so-panel widget widget_interico_number_box panel-last-child" data-index="17">
+                                <div id="panel-7788-6-2-1"
+                                    class="so-panel widget widget_interico_number_box panel-last-child" data-index="17">
                                     <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-6-2-1">
                                         <!-- Begin number box -->
                                         <div class="number-box style-default">
@@ -1675,7 +1981,8 @@
                                             <div class="content-box">
                                                 <div class="content-box-info">
                                                     <h3>Real application</h3>
-                                                    <p class="number-box-content">When an unknown printer took a galley of type and scrambled it to make a book.</p>
+                                                    <p class="number-box-content">When an unknown printer took a galley
+                                                        of type and scrambled it to make a book.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1685,7 +1992,9 @@
                                 </div>
                             </div>
                             <div id="pgc-7788-6-3" class="panel-grid-cell">
-                                <div id="panel-7788-6-3-0" class="so-panel widget widget_interico_number_box panel-first-child" data-index="18">
+                                <div id="panel-7788-6-3-0"
+                                    class="so-panel widget widget_interico_number_box panel-first-child"
+                                    data-index="18">
                                     <div class="animate animate-3 panel-widget-style panel-widget-style-for-7788-6-3-0">
                                         <!-- Begin number box -->
                                         <div class="number-box style-default">
@@ -1694,7 +2003,8 @@
                                             <div class="content-box">
                                                 <div class="content-box-info">
                                                     <h3>Prototyping Ideas</h3>
-                                                    <p class="number-box-content">When an unknown printer took a galley of type and scrambled it to make a book.</p>
+                                                    <p class="number-box-content">When an unknown printer took a galley
+                                                        of type and scrambled it to make a book.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1702,7 +2012,8 @@
 
                                     </div>
                                 </div>
-                                <div id="panel-7788-6-3-1" class="so-panel widget widget_interico_number_box panel-last-child" data-index="19">
+                                <div id="panel-7788-6-3-1"
+                                    class="so-panel widget widget_interico_number_box panel-last-child" data-index="19">
                                     <div class="animate animate-3 panel-widget-style panel-widget-style-for-7788-6-3-1">
                                         <!-- Begin number box -->
                                         <div class="number-box style-default">
@@ -1711,7 +2022,8 @@
                                             <div class="content-box">
                                                 <div class="content-box-info">
                                                     <h3>Polish &amp; Perfection</h3>
-                                                    <p class="number-box-content">When an unknown printer took a galley of type and scrambled it to make a book.</p>
+                                                    <p class="number-box-content">When an unknown printer took a galley
+                                                        of type and scrambled it to make a book.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1723,7 +2035,8 @@
                         </div>
                     </div>
 
-                    <section class="section-gallery gallery-layout-boxed grid-spaced captions-cards cards-flat gallery-light">
+                    <section
+                        class="section-gallery gallery-layout-boxed grid-spaced captions-cards cards-flat gallery-light">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1747,8 +2060,12 @@
                                 <div class="animated fadeInUp" id="gallery">
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item industrial ">
                                         <a href="../projects/central-city-building/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/09/portfolio-1-full-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-692x520.jpg 692w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="Central City Building"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/09/portfolio-1-full-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-1-full-692x520.jpg 692w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="Central City Building"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> industrial</div>
@@ -1759,8 +2076,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item hospitality ">
                                         <a href="../projects/the-innovation-clinic/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/09/portfolio-2-full-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-780x520.jpg 780w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="The Innovation Clinic"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/09/portfolio-2-full-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-2-full-780x520.jpg 780w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="The Innovation Clinic"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> hospitality</div>
@@ -1771,8 +2092,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item commercial ">
                                         <a href="../projects/the-shedquarters/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/09/portfolio-3-full-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-780x520.jpg 780w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="The Shedquarters"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/09/portfolio-3-full-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/portfolio-3-full-780x520.jpg 780w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="The Shedquarters"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> commercial</div>
@@ -1783,11 +2108,16 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item interior-design residential ">
                                         <a href="../projects/university-of-sciences/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/08/portfolio-4-full-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-780x520.jpg 780w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="University of Sciences"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/08/portfolio-4-full-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/portfolio-4-full-780x520.jpg 780w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="University of Sciences"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded"> interior design residential
+                                                    <div class="project-category text-faded"> interior design
+                                                        residential
                                                     </div>
                                                     <div class="project-name"> University of Sciences</div>
                                                 </div>
@@ -1796,8 +2126,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item hospitality ">
                                         <a href="../projects/private-modern-house/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/08/project-7-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-760x520.jpg 760w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="Private Modern House"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/08/project-7-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-760x520.jpg 760w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="Private Modern House"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> hospitality</div>
@@ -1808,8 +2142,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item commercial residential ">
                                         <a href="../projects/museum-of-modern-arts/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/08/project-2b-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-760x520.jpg 760w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="Museum of Modern Arts"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/08/project-2b-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-2b-760x520.jpg 760w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="Museum of Modern Arts"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> commercial residential
@@ -1821,8 +2159,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item commercial interior-design ">
                                         <a href="../projects/grand-office/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2018/05/services-img-18-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-780x520.jpg 780w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="Grand Office"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2018/05/services-img-18-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2018/05/services-img-18-780x520.jpg 780w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="Grand Office"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> commercial interior design
@@ -1834,11 +2176,16 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item hospitality interior-design ">
                                         <a href="../projects/home-office-design/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/09/project-3-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-760x520.jpg 760w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="Home Office Design"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/09/project-3-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/09/project-3-760x520.jpg 760w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="Home Office Design"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded"> hospitality interior design
+                                                    <div class="project-category text-faded"> hospitality interior
+                                                        design
                                                     </div>
                                                     <div class="project-name"> Home Office Design</div>
                                                 </div>
@@ -1847,8 +2194,12 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-lg-4 item interior-design ">
                                         <a href="../projects/maroon-beach-hotels/index.html" class="portfolio-box">
-                                            <div class="image-container"> <img src="../wp-content/uploads/2016/08/project-7-1-480x320.jpg" srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-760x520.jpg 760w"
-                                                    width="480" height="320" sizes="(min-width: 781px) 600px, calc(100vw - 30px)" alt="Maroon Beach Hotels"></div>
+                                            <div class="image-container"> <img
+                                                    src="../wp-content/uploads/2016/08/project-7-1-480x320.jpg"
+                                                    srcset="https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-240x180.jpg 240w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-360x240.jpg 360w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-420x280.jpg 420w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-600x400.jpg 600w, https://www.demo.themicart.com/interico-wp/wp-content/uploads/2016/08/project-7-1-760x520.jpg 760w"
+                                                    width="480" height="320"
+                                                    sizes="(min-width: 781px) 600px, calc(100vw - 30px)"
+                                                    alt="Maroon Beach Hotels"></div>
                                             <div class="portfolio-box-caption">
                                                 <div class="portfolio-box-caption-content">
                                                     <div class="project-category text-faded"> interior design</div>
@@ -1867,9 +2218,12 @@
 
 
                     <div id="pg-7788-8" class="panel-grid panel-has-style">
-                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-8" data-stretch-type="full">
+                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-8"
+                            data-stretch-type="full">
                             <div id="pgc-7788-8-0" class="panel-grid-cell">
-                                <div id="panel-7788-8-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="21">
+                                <div id="panel-7788-8-0-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="21">
                                     <div class="panel-widget-style panel-widget-style-for-7788-8-0-0">
                                         <div class="textwidget">
                                             <p><span class="subtitle dash-true style-dark text-default">Clients</span>
@@ -1880,65 +2234,97 @@
                                 </div>
                             </div>
                             <div id="pgc-7788-8-1" class="panel-grid-cell">
-                                <div id="panel-7788-8-1-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child" data-index="22">
+                                <div id="panel-7788-8-1-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child"
+                                    data-index="22">
                                     <div class="animate animate-1 panel-widget-style panel-widget-style-for-7788-8-1-0">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9338 aligncenter" title="Fine Home Box" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-7.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9338 aligncenter" title="Fine Home Box"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-7.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="panel-7788-8-1-1" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child" data-index="23">
+                                <div id="panel-7788-8-1-1"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child"
+                                    data-index="23">
                                     <div class="animate animate-1 panel-widget-style panel-widget-style-for-7788-8-1-1">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9339 aligncenter" title="Bright Sun Views" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-8.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9339 aligncenter" title="Bright Sun Views"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-8.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="pgc-7788-8-2" class="panel-grid-cell">
-                                <div id="panel-7788-8-2-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child" data-index="24">
+                                <div id="panel-7788-8-2-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child"
+                                    data-index="24">
                                     <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-8-2-0">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9332 aligncenter" title="Build Origin" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-1.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9332 aligncenter" title="Build Origin"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-1.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="panel-7788-8-2-1" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child" data-index="25">
+                                <div id="panel-7788-8-2-1"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child"
+                                    data-index="25">
                                     <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-8-2-1">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9337 aligncenter" title="Bigger Wall" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-6.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9337 aligncenter" title="Bigger Wall"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-6.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="pgc-7788-8-3" class="panel-grid-cell">
-                                <div id="panel-7788-8-3-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child" data-index="26">
+                                <div id="panel-7788-8-3-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child"
+                                    data-index="26">
                                     <div class="animate animate-3 panel-widget-style panel-widget-style-for-7788-8-3-0">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9334 aligncenter" title="Cinerbuild" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-3.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9334 aligncenter" title="Cinerbuild"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-3.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="panel-7788-8-3-1" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child" data-index="27">
+                                <div id="panel-7788-8-3-1"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child"
+                                    data-index="27">
                                     <div class="animate animate-3 panel-widget-style panel-widget-style-for-7788-8-3-1">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9335 aligncenter" title="Sprinter Brick" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-4.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9335 aligncenter" title="Sprinter Brick"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-4.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="pgc-7788-8-4" class="panel-grid-cell">
-                                <div id="panel-7788-8-4-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child" data-index="28">
+                                <div id="panel-7788-8-4-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child"
+                                    data-index="28">
                                     <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-8-4-0">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9332 aligncenter" title="Build Origin" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-1.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9332 aligncenter" title="Build Origin"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-1.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="panel-7788-8-4-1" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child" data-index="29">
+                                <div id="panel-7788-8-4-1"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child"
+                                    data-index="29">
                                     <div class="animate animate-4 panel-widget-style panel-widget-style-for-7788-8-4-1">
                                         <div class="textwidget">
-                                            <p><img class="size-full wp-image-9338 aligncenter" title="Fine Home Box" src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-7.png" alt="" width="122" height="57" data-toggle="tooltip" /></p>
+                                            <p><img class="size-full wp-image-9338 aligncenter" title="Fine Home Box"
+                                                    src="../demo-7/wp-content/uploads/sites/7/2018/04/logo-7.png" alt=""
+                                                    width="122" height="57" data-toggle="tooltip" /></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1953,46 +2339,56 @@
 
 
                     <div id="pg-7788-10" class="panel-grid panel-has-style">
-                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-10" data-stretch-type="full">
+                        <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7788-10"
+                            data-stretch-type="full">
                             <div id="pgc-7788-10-0" class="panel-grid-cell">
-                                <div id="panel-7788-10-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="31">
-                                    <div class="shadow-box overlap-right animate animate-1 panel-widget-style panel-widget-style-for-7788-10-0-0">
+                                <div id="panel-7788-10-0-0"
+                                    class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child"
+                                    data-index="31">
+                                    <div
+                                        class="shadow-box overlap-right animate animate-1 panel-widget-style panel-widget-style-for-7788-10-0-0">
                                         <div class="textwidget">
                                             <h2><strong>Have a creative project? </strong><strong>Let's get in
-													touch.</strong></h2>
+                                                    touch.</strong></h2>
                                             <div class="divider-light"></div>
-                                            <div role="form" class="wpcf7" id="wpcf7-f6793-p7788-o1" lang="en-US" dir="ltr">
+                                            <div role="form" class="wpcf7" id="wpcf7-f6793-p7788-o1" lang="en-US"
+                                                dir="ltr">
                                                 <div class="screen-reader-response"></div>
-                                                <form action="https://www.demo.themicart.com/interico-wp/demo-9/#wpcf7-f6793-p7788-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                                <form
+                                                    action="https://www.demo.themicart.com/interico-wp/demo-9/#wpcf7-f6793-p7788-o1"
+                                                    method="post" class="wpcf7-form" novalidate="novalidate">
                                                     <div style="display: none;">
                                                         <input type="hidden" name="_wpcf7" value="6793" />
                                                         <input type="hidden" name="_wpcf7_version" value="5.1.6" />
                                                         <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6793-p7788-o1" />
-                                                        <input type="hidden" name="_wpcf7_container_post" value="7788" />
+                                                        <input type="hidden" name="_wpcf7_unit_tag"
+                                                            value="wpcf7-f6793-p7788-o1" />
+                                                        <input type="hidden" name="_wpcf7_container_post"
+                                                            value="7788" />
                                                     </div>
                                                     <p><span class="wpcf7-form-control-wrap your-name"><input
-																type="text" name="your-name" value="" size="40"
-																class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																aria-required="true" aria-invalid="false"
-																placeholder="Name" /></span></p>
+                                                                type="text" name="your-name" value="" size="40"
+                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Name" /></span></p>
                                                     <p> <span class="wpcf7-form-control-wrap your-email"><input
-																type="email" name="your-email" value="" size="40"
-																class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-																aria-required="true" aria-invalid="false"
-																placeholder="Email" /></span></p>
+                                                                type="email" name="your-email" value="" size="40"
+                                                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Email" /></span></p>
                                                     <p> <span class="wpcf7-form-control-wrap your-subject"><input
-																type="text" name="your-subject" value="" size="40"
-																class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-																aria-required="true" aria-invalid="false"
-																placeholder="Subject" /></span></p>
+                                                                type="text" name="your-subject" value="" size="40"
+                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Subject" /></span></p>
                                                     <p> <span class="wpcf7-form-control-wrap your-message"><textarea
-																name="your-message" cols="5" rows="1"
-																class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-																aria-required="true" aria-invalid="false"
-																placeholder="Hello, I am interested in..."></textarea></span>
+                                                                name="your-message" cols="5" rows="1"
+                                                                class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Hello, I am interested in..."></textarea></span>
                                                     </p>
-                                                    <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></p>
+                                                    <p><input type="submit" value="Send"
+                                                            class="wpcf7-form-control wpcf7-submit" /></p>
                                                     <div class="wpcf7-response-output wpcf7-display-none"></div>
                                                 </form>
                                             </div>
@@ -2001,10 +2397,15 @@
                                 </div>
                             </div>
                             <div id="pgc-7788-10-1" class="panel-grid-cell">
-                                <div id="panel-7788-10-1-0" class="so-panel widget widget_sow-google-map panel-first-child panel-last-child" data-index="32">
-                                    <div class="animate animate-2 panel-widget-style panel-widget-style-for-7788-10-1-0">
+                                <div id="panel-7788-10-1-0"
+                                    class="so-panel widget widget_sow-google-map panel-first-child panel-last-child"
+                                    data-index="32">
+                                    <div
+                                        class="animate animate-2 panel-widget-style panel-widget-style-for-7788-10-1-0">
                                         <div class="so-widget-sow-google-map so-widget-sow-google-map-base">
-                                            <div class="sow-google-map-canvas" style="height:480px;" id="map-canvas-081b911f7985226ef3e09213ed39df18" data-options="{&quot;address&quot;:&quot;London&quot;,&quot;zoom&quot;:12,&quot;mobileZoom&quot;:12,&quot;gestureHandling&quot;:&quot;cooperative&quot;,&quot;disableUi&quot;:false,&quot;keepCentered&quot;:false,&quot;markerIcon&quot;:&quot;https:\/\/www.demo.themicart.com\/interico-wp\/demo-9\/wp-content\/uploads\/sites\/9\/2018\/05\/marker.png&quot;,&quot;markersDraggable&quot;:false,&quot;markerAtCenter&quot;:true,&quot;markerInfoDisplay&quot;:&quot;click&quot;,&quot;markerInfoMultiple&quot;:true,&quot;markerPositions&quot;:&quot;&quot;,&quot;mapName&quot;:&quot;Custom Map&quot;,&quot;mapStyles&quot;:[{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:&quot;-100&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:65},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:&quot;50&quot;},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:&quot;-100&quot;}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:&quot;30&quot;}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:&quot;40&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#ffff00&quot;},{&quot;lightness&quot;:-25},{&quot;saturation&quot;:-97}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;labels&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:-25},{&quot;saturation&quot;:-100}]}],&quot;directions&quot;:&quot;&quot;,&quot;apiKey&quot;:&quot;AIzaSyB-9Xg-dZrW7rwgC_k4LF9jJ3CVcIt9fXI&quot;,&quot;breakpoint&quot;:780}"
+                                            <div class="sow-google-map-canvas" style="height:480px;"
+                                                id="map-canvas-081b911f7985226ef3e09213ed39df18"
+                                                data-options="{&quot;address&quot;:&quot;London&quot;,&quot;zoom&quot;:12,&quot;mobileZoom&quot;:12,&quot;gestureHandling&quot;:&quot;cooperative&quot;,&quot;disableUi&quot;:false,&quot;keepCentered&quot;:false,&quot;markerIcon&quot;:&quot;https:\/\/www.demo.themicart.com\/interico-wp\/demo-9\/wp-content\/uploads\/sites\/9\/2018\/05\/marker.png&quot;,&quot;markersDraggable&quot;:false,&quot;markerAtCenter&quot;:true,&quot;markerInfoDisplay&quot;:&quot;click&quot;,&quot;markerInfoMultiple&quot;:true,&quot;markerPositions&quot;:&quot;&quot;,&quot;mapName&quot;:&quot;Custom Map&quot;,&quot;mapStyles&quot;:[{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:&quot;-100&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:65},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:&quot;50&quot;},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:&quot;-100&quot;}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:&quot;30&quot;}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:&quot;40&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#ffff00&quot;},{&quot;lightness&quot;:-25},{&quot;saturation&quot;:-97}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;labels&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:-25},{&quot;saturation&quot;:-100}]}],&quot;directions&quot;:&quot;&quot;,&quot;apiKey&quot;:&quot;AIzaSyB-9Xg-dZrW7rwgC_k4LF9jJ3CVcIt9fXI&quot;,&quot;breakpoint&quot;:780}"
                                                 data-fallback-image="{&quot;img&quot;:&quot;&quot;}"></div>
                                         </div>
                                     </div>
@@ -2026,10 +2427,13 @@
                             <div class="widget-container">
                                 <h4 class="footer-header">About us</h4>
                                 <div class="textwidget">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                         consequat.
                                     </p>
-                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.</p>
                                 </div>
                             </div>
                         </div>
@@ -2038,20 +2442,30 @@
                                 <h4 class="footer-header">About us</h4>
                                 <div class="menu-about-us-v2-container">
                                     <ul id="menu-about-us-v2" class="menu">
-                                        <li id="menu-item-9531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9531">
-                                            <a href="../about-us/index.html">About us</a></li>
-                                        <li id="menu-item-9532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9532">
-                                            <a href="../about-us/our-team/index.html">our team</a></li>
-                                        <li id="menu-item-9533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9533">
-                                            <a href="../testimonials/index.html">Testimonials</a></li>
-                                        <li id="menu-item-9534" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9534">
+                                        <li id="menu-item-9531"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9531">
+                                            <a href="../about-us/index.html">About us</a>
+                                        </li>
+                                        <li id="menu-item-9532"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9532">
+                                            <a href="../about-us/our-team/index.html">our team</a>
+                                        </li>
+                                        <li id="menu-item-9533"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9533">
+                                            <a href="../testimonials/index.html">Testimonials</a>
+                                        </li>
+                                        <li id="menu-item-9534"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9534">
                                             <a href="../about-us/left-sidebar-page/index.html">Left sidebar page</a>
                                         </li>
-                                        <li id="menu-item-9535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9535">
+                                        <li id="menu-item-9535"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9535">
                                             <a href="../about-us/right-sidebar-page/index.html">Right sidebar page</a>
                                         </li>
-                                        <li id="menu-item-9536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9536">
-                                            <a href="../shortcodes/index.html">Shortcodes</a></li>
+                                        <li id="menu-item-9536"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9536">
+                                            <a href="../shortcodes/index.html">Shortcodes</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -2061,21 +2475,35 @@
                                 <h4 class="footer-header">Services</h4>
                                 <div class="menu-services-v2-container">
                                     <ul id="menu-services-v2" class="menu">
-                                        <li id="menu-item-9525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9525">
-                                            <a href="../services/architecture/index.html">Architecture</a></li>
-                                        <li id="menu-item-9526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9526">
-                                            <a href="../services/interior-design/index.html">Interior design</a></li>
-                                        <li id="menu-item-9527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9527">
+                                        <li id="menu-item-9525"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9525">
+                                            <a href="../services/architecture/index.html">Architecture</a>
+                                        </li>
+                                        <li id="menu-item-9526"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9526">
+                                            <a href="../services/interior-design/index.html">Interior design</a>
+                                        </li>
+                                        <li id="menu-item-9527"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9527">
                                             <a href="../services/lighting-installation/index.html">Lighting
-												installation</a></li>
-                                        <li id="menu-item-9528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9528">
-                                            <a href="../services/led-lighting/index.html">LED Lighting</a></li>
-                                        <li id="menu-item-9529" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9529">
-                                            <a href="../services/floor-planning/index.html">Floor Planning</a></li>
-                                        <li id="menu-item-9530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9530">
-                                            <a href="../services/decorating/index.html">Decorating</a></li>
-                                        <li id="menu-item-9524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9524">
-                                            <a href="../services/index.html">All Services</a></li>
+                                                installation</a>
+                                        </li>
+                                        <li id="menu-item-9528"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9528">
+                                            <a href="../services/led-lighting/index.html">LED Lighting</a>
+                                        </li>
+                                        <li id="menu-item-9529"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9529">
+                                            <a href="../services/floor-planning/index.html">Floor Planning</a>
+                                        </li>
+                                        <li id="menu-item-9530"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9530">
+                                            <a href="../services/decorating/index.html">Decorating</a>
+                                        </li>
+                                        <li id="menu-item-9524"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9524">
+                                            <a href="../services/index.html">All Services</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -2105,7 +2533,8 @@
                         <!-- Logo begin -->
                         <div class="footer-logo-box">
 
-                            <img id="footer-logo" src="wp-content/uploads/sites/9/2018/05/interico-logo-white.png" srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/05/interico-logo-white.png, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/05/interico-logo-white2x.png 2x"
+                            <img id="footer-logo" src="wp-content/uploads/sites/9/2018/05/interico-logo-white.png"
+                                srcset="https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/05/interico-logo-white.png, https://www.demo.themicart.com/interico-wp/demo-9/wp-content/uploads/sites/9/2018/05/interico-logo-white2x.png 2x"
                                 alt="Demo 9">
 
 
@@ -2135,82 +2564,89 @@
 
     <style type="text/css" media="all" id="siteorigin-panels-layouts-footer">
         /* Layout w5aafd4866dff7 */
-        
+
         #pgc-w5aafd4866dff7-0-0,
         #pgc-w5aafd4866dff7-0-1,
         #pgc-w5aafd4866dff7-0-2,
         #pgc-w5aafd4866dff7-0-3 {
             width: 25%
         }
-        
+
         #pl-w5aafd4866dff7 #panel-w5aafd4866dff7-0-0-0,
         #pl-w5aafd4866dff7 #panel-w5aafd4866dff7-0-1-0,
         #pl-w5aafd4866dff7 #panel-w5aafd4866dff7-0-2-0,
         #pl-w5aafd4866dff7 #panel-w5aafd4866dff7-0-3-0 {}
-        
+
         #pl-w5aafd4866dff7 .so-panel {
             margin-bottom: 30px
         }
-        
+
         #pl-w5aafd4866dff7 .so-panel:last-child {
             margin-bottom: 0px
         }
-        
+
         #pg-w5aafd4866dff7-0>.panel-row-style {
             background-color: #f5f5f5
         }
-        
+
         #pg-w5aafd4866dff7-0.panel-no-style,
         #pg-w5aafd4866dff7-0.panel-has-style>.panel-row-style {
             -webkit-align-items: flex-start;
             align-items: flex-start
         }
-        
+
         @media (max-width:780px) {
+
             #pg-w5aafd4866dff7-0.panel-no-style,
             #pg-w5aafd4866dff7-0.panel-has-style>.panel-row-style {
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column
             }
+
             #pg-w5aafd4866dff7-0>.panel-grid-cell,
             #pg-w5aafd4866dff7-0>.panel-row-style>.panel-grid-cell {
                 width: 100%;
                 margin-right: 0
             }
+
             #pgc-w5aafd4866dff7-0-0,
             #pgc-w5aafd4866dff7-0-1,
             #pgc-w5aafd4866dff7-0-2 {
                 margin-bottom: 30px
             }
+
             #pl-w5aafd4866dff7 .panel-grid-cell {
                 padding: 0
             }
+
             #pl-w5aafd4866dff7 .panel-grid .panel-grid-cell-empty {
                 display: none
             }
+
             #pl-w5aafd4866dff7 .panel-grid .panel-grid-cell-mobile-last {
                 margin-bottom: 0px
             }
         }
+
         /* Layout w5b028bcec9027 */
-        
+
         #pgc-w5b028bcec9027-0-0 {
             width: 100%;
             width: calc(100% - (0 * 30px))
         }
-        
+
         #pl-w5b028bcec9027 #panel-w5b028bcec9027-0-0-0,
         #pl-w5b028bcec9027 #panel-w5b028bcec9027-1-0-0,
         #pl-w5b028bcec9027 #panel-w5b028bcec9027-1-1-0,
         #pl-w5b028bcec9027 #panel-w5b028bcec9027-1-2-0,
         #pl-w5b028bcec9027 #panel-w5b028bcec9027-1-3-0 {}
-        
+
         #pg-w5b028bcec9027-0,
         #pl-w5b028bcec9027 .so-panel {
             margin-bottom: 30px
         }
-        
+
         #pgc-w5b028bcec9027-1-0,
         #pgc-w5b028bcec9027-1-1,
         #pgc-w5b028bcec9027-1-2,
@@ -2218,15 +2654,15 @@
             width: 25%;
             width: calc(25% - (0.75 * 30px))
         }
-        
+
         #pl-w5b028bcec9027 .so-panel:last-child {
             margin-bottom: 0px
         }
-        
+
         #pg-w5b028bcec9027-0>.panel-row-style {
             padding: 0px 0px 0px 0px
         }
-        
+
         #pg-w5b028bcec9027-0.panel-no-style,
         #pg-w5b028bcec9027-0.panel-has-style>.panel-row-style,
         #pg-w5b028bcec9027-1.panel-no-style,
@@ -2234,8 +2670,9 @@
             -webkit-align-items: flex-start;
             align-items: flex-start
         }
-        
+
         @media (max-width:780px) {
+
             #pg-w5b028bcec9027-0.panel-no-style,
             #pg-w5b028bcec9027-0.panel-has-style>.panel-row-style,
             #pg-w5b028bcec9027-1.panel-no-style,
@@ -2244,6 +2681,7 @@
                 -ms-flex-direction: column;
                 flex-direction: column
             }
+
             #pg-w5b028bcec9027-0>.panel-grid-cell,
             #pg-w5b028bcec9027-0>.panel-row-style>.panel-grid-cell,
             #pg-w5b028bcec9027-1>.panel-grid-cell,
@@ -2251,30 +2689,40 @@
                 width: 100%;
                 margin-right: 0
             }
+
             #pgc-w5b028bcec9027-1-0,
             #pgc-w5b028bcec9027-1-1,
             #pgc-w5b028bcec9027-1-2 {
                 margin-bottom: 30px
             }
+
             #pl-w5b028bcec9027 .panel-grid-cell {
                 padding: 0
             }
+
             #pl-w5b028bcec9027 .panel-grid .panel-grid-cell-empty {
                 display: none
             }
+
             #pl-w5b028bcec9027 .panel-grid .panel-grid-cell-mobile-last {
                 margin-bottom: 0px
             }
         }
     </style>
-    <link rel='stylesheet' id='sow-google-map-css' href='wp-content/plugins/so-widgets-bundle/widgets/google-map/css/style82f3.css?ver=1.15.9' type='text/css' media='all' />
-    <script type='text/javascript' src='wp-content/themes/interico/js/navigation4a7d.js?ver=20151215' id='navigation-js'></script>
-    <script type='text/javascript' src='wp-content/themes/interico/js/bootstrap.mind96d.js?ver=5.6.1' id='bootstrap-js-js'></script>
-    <script type='text/javascript' src='wp-content/themes/interico/js/isotope.pkgd.mind96d.js?ver=5.6.1' id='isotope-js'></script>
+    <link rel='stylesheet' id='sow-google-map-css'
+        href='wp-content/plugins/so-widgets-bundle/widgets/google-map/css/style82f3.css?ver=1.15.9' type='text/css'
+        media='all' />
+    <script type='text/javascript' src='wp-content/themes/interico/js/navigation4a7d.js?ver=20151215'
+        id='navigation-js'></script>
+    <script type='text/javascript' src='wp-content/themes/interico/js/bootstrap.mind96d.js?ver=5.6.1'
+        id='bootstrap-js-js'></script>
+    <script type='text/javascript' src='wp-content/themes/interico/js/isotope.pkgd.mind96d.js?ver=5.6.1'
+        id='isotope-js'></script>
     <script type='text/javascript' src='wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4' id='imagesloaded-js'></script>
     <script type='text/javascript' src='wp-content/themes/interico/js/slick.mind96d.js?ver=5.6.1' id='slick-js'>
     </script>
-    <script type='text/javascript' src='wp-content/themes/interico/js/themicartd96d.js?ver=5.6.1' id='interico-themicart-js'></script>
+    <script type='text/javascript' src='wp-content/themes/interico/js/themicartd96d.js?ver=5.6.1'
+        id='interico-themicart-js'></script>
     <script type='text/javascript' id='contact-form-7-js-extra'>
         /* <![CDATA[ */
         var wpcf7 = {
@@ -2285,8 +2733,10 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scriptsb62d.js?ver=5.1.6' id='contact-form-7-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min6f3e.js?ver=1.3.0' id='wp-featherlight-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scriptsb62d.js?ver=5.1.6'
+        id='contact-form-7-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min6f3e.js?ver=1.3.0'
+        id='wp-featherlight-js'></script>
     <script type='text/javascript' src='wp-includes/js/wp-embed.mind96d.js?ver=5.6.1' id='wp-embed-js'></script>
     <script type='text/javascript' id='siteorigin-panels-front-styles-js-extra'>
         /* <![CDATA[ */
@@ -2295,7 +2745,48 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='wp-content/plugins/siteorigin-panels/js/styling-21013.min2c4f.js?ver=2.10.13' id='siteorigin-panels-front-styles-js'></script>
+    <script src="vendors/slick.min.js"></script>
+    <script>
+        $(".serviceSlider").slick({
+            dots: true,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay:true,
+            arrows:false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        })
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/siteorigin-panels/js/styling-21013.min2c4f.js?ver=2.10.13'
+        id='siteorigin-panels-front-styles-js'></script>
     <script type='text/javascript' id='sow-google-map-js-extra'>
         /* <![CDATA[ */
         var soWidgetsGoogleMap = {
@@ -2305,12 +2796,11 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='wp-content/plugins/so-widgets-bundle/js/sow.google-map.min82f3.js?ver=1.15.9' id='sow-google-map-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/so-widgets-bundle/js/sow.google-map.min82f3.js?ver=1.15.9'
+        id='sow-google-map-js'></script>
     <script type="text/javascript">
         document.body.className = document.body.className.replace("siteorigin-panels-before-js", "");
     </script>
 </body>
-
-<!-- Mirrored from www.demo.themicart.com/interico-wp/demo-9/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Feb 2021 10:51:25 GMT -->
 
 </html>

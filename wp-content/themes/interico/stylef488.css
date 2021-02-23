@@ -7178,17 +7178,7 @@ hr {
     padding-left: 30px;
 }
 
-main ul li:before, .content ul li:before, .panel-body ul li:before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    left: -30px;
-    bottom: 5px;
-    width: 20px;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.2);
-    margin-right: -20px;
-}
+
 
 /*main ul li,
 .content ul li,
